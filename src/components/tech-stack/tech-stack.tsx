@@ -11,10 +11,12 @@ import {
   tsIcon,
   nextIcon,
   nodeIcon,
-  wordpressIcon
+  wordpressIcon,
+  trelloIcon,
+  aiIcon,
+  figmaIcon,
+  asanaIcon
 } from "@/assets";
-import { IonIcon } from "@ionic/react";
-import { logoLinkedin, logoInstagram, logoGithub } from "ionicons/icons";
 
 
 type StackType = {
@@ -75,6 +77,25 @@ const stack: StackType = [
   
 ];
 
+const tools : StackType = [
+  {
+    title: "Illustrator",
+    icone: aiIcon,
+  },
+  {
+    title: "Figma",
+    icone: figmaIcon,
+  },
+  {
+    title: "trello",
+    icone: trelloIcon,
+  },
+  {
+    title: "Asana",
+    icone: asanaIcon,
+  },
+];
+
 function TechStackSection() {
   return (
     <section className="py-24 px-3">
@@ -89,6 +110,15 @@ function TechStackSection() {
           ))}
         </div>
       </div>
+
+      <h2 className="text-4xl text-center py-6 font-bold mt-12">My toolbox</h2>
+      <div className="flex flex-wrap items-center justify-center gap-12">
+          {tools.map((item) => (
+            <div key={item.title} className="bg-foreground md:w-28 w-20 h-20  md:h-28 flex items-center justify-center rounded-2xl drop-shadow-lg p-3"> 
+              <Image src={item.icone} alt={item.title}></Image>
+            </div>
+          ))}
+        </div>
     </section>
   );
 }

@@ -13,4 +13,8 @@ export { default as itccProjectImage } from "./itcc-project.png";
 export { default as tsIcon } from "./typescript-icon.svg";
 export { default as nextIcon } from "./next-js.1024.png";
 export { default as nodeIcon } from "./nodejs.png";
-export { default as wordpressIcon } from "./WordPress.com.svg"
+export { default as wordpressIcon } from "./WordPress.com.png";
+export { default as trelloIcon } from "./trello-icon.svg"; 
+export { default as figmaIcon } from "./svg.svg";
+export { default as aiIcon } from "./adobe-illustrator-icon.svg";
+export { default as asanaIcon } from "./asana.1024.png"

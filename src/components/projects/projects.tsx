@@ -10,7 +10,7 @@ function ProjectsSection() {
       <p className="text-xl text-center md:pb-12 pb-6 ">
         Things I’ve built so far
       </p>
-      <div className="flex flex-col md:flex-row gap-12 items-center justify-center">
+      <div className="flex flex-col md:flex-row gap-12 flex-wrap items-center justify-center">
         <ProjectCard
           stack="React Js , Tailwind CSS , TypeScript"
           image={nawtechProjectImage}
@@ -26,6 +26,8 @@ function ProjectsSection() {
           link="https://itcc-rdc.com/"
           description="Designed and deployed website for ITCC, a company specializing in cybersecurity, focusing on advanced security, SEO optimization, and responsive design."
         ></ProjectCard>
+
+        
       </div>
     </section>
   );
