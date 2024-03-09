@@ -1,0 +1,10 @@
+export { default as logo } from "./logo-jr.png";
+export { default as JrPicture } from "./junior__asosa_picture.jpg";
+export { default as htmlIcon } from "./vscode-icons_file-type-html.svg";
+export { default as cssIcon } from "./vscode-icons_file-type-css.svg";
+export { default as jsIcon } from "./vscode-icons_file-type-js-official.svg";
+export { default as reactIcon } from "./logos_react.svg";
+export { default as tailwindIcon } from "./vscode-icons_file-type-tailwind.svg";
+export { default as sassIcon } from "./logos_sass.svg";
+export { default as gitIcon } from "./logos_git-icon.svg";
+export { default as githubIcon } from "./akar-icons_github-fill.svg";
