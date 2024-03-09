@@ -1,6 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 import { CardBody, CardContainer, CardItem } from "../../components/ui/3d-Card";
-import { link } from "fs";
+
 
 function ProjectCard({
   image,

@@ -1,6 +1,6 @@
-"use client"
-import {  motion, useInView, useAnimation, Variant } from "framer-motion";
-import { useRef,useEffect } from "react";
+"use client";
+import { motion, useInView, useAnimation, Variant } from "framer-motion";
+import { useRef, useEffect } from "react";
 
 type AnimatedTextProps = {
   text: string | string[];
@@ -97,3 +97,5 @@ export const AnimatedText = ({
     </Wrapper>
   );
 };
+
+export default AnimatedText;

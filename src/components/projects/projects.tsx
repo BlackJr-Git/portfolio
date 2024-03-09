@@ -1,4 +1,6 @@
 import { nawtechProjectImage, itccProjectImage } from "@/assets";
+// import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 
 import ProjectCard from "./project-card";
 function ProjectsSection() {
@@ -21,7 +23,7 @@ function ProjectsSection() {
           stack="Wordpress , Elementor "
           image={itccProjectImage}
           title="ITCC - RDC Showcase site"
-          link = "https://itcc-rdc.com/"
+          link="https://itcc-rdc.com/"
           description="Designed and deployed website for ITCC, a company specializing in cybersecurity, focusing on advanced security, SEO optimization, and responsive design."
         ></ProjectCard>
       </div>

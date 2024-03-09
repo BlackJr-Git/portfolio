@@ -1,6 +1,14 @@
 import { JrPicture } from "@/assets";
 import Image from "next/image";
-import { AnimatedText } from "../animations/animated-text";
+// import { AnimatedText } from "../animations/animated-text";
+import { lazy } from "react";
+import { Suspense } from "react";
+
+// const AnimatedText  = lazy(
+//   () => import(require("../animations/animated-text"))
+// );
+
+const AnimatedText = lazy(() => import('../animations/animated-text'));
 
 function HeroBanner() {
   return (
@@ -8,22 +16,24 @@ function HeroBanner() {
       <div className="flex md:flex-row flex-col items-center justify-center max-w-5xl w-full ">
         <div className="md:w-1/2 w-full my-12">
           <p className="text-5xl font-bold md:text-left text-center">Hi , </p>
-          <p className="text-5xl font-bold md:text-left text-center">My name is</p>
-          <h1 className="text-center md:text-left text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-blue-500 to-red-500">
-            {/* Junior Asosa */}
-            <AnimatedText
-            once
-            text="Junior Asosa"
-            el="h1"
-            className="text-5xl"
-          />
-          </h1>
-          <p className="text-5xl font-bold text-center md:text-left">I build some cool things for web</p>
+          <p className="text-5xl font-bold md:text-left text-center">
+            My name is
+          </p>
+          <div className="text-center md:text-left text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-l from-blue-500 to-red-500">
+            <Suspense fallback={<div>Chargement...</div>}>
+              <AnimatedText text="Junior Asosa"
+              el="h1"
+              className="text-5xl" />
+            </Suspense>
+          </div>
+          <p className="text-5xl font-bold text-center md:text-left">
+            I build some cool things for web
+          </p>
         </div>
         <div className="md:w-1/2 w-full flex items-end md:justify-end justify-center ">
-          <div className="w-64 rounded-full border-8 relative border-foreground">
+          <div className="flex items-center justify-center w-64 h-64 rounded-full bg-white bg-gradient-to-r from-blue-500 to-red-500  relative border-foreground">
             <Image
-              className="rounded-full"
+              className="rounded-full w-60"
               src={JrPicture}
               alt="junior asosa picture"
             ></Image>
