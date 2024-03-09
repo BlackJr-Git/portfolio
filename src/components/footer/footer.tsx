@@ -1,7 +1,4 @@
-import Image from "next/image";
-import { logo } from "@/assets";
 import Logo from "../header/logo/logo";
-import SocialNetwork from "../header/social-networks/social-network";
 import Navbar from "../header/navbar/navbar";
 
 function Footer() {
@@ -19,7 +16,12 @@ function Footer() {
         </div>
         <div className="border-t-2 border-t-background flex md:flex-row flex-col items-center md:justify-between justify-center py-6">
           <Navbar></Navbar>
-          <p>Designed and built by Junior Asosa</p>
+          <p>
+            Designed and built by{" "}
+            <span className="bg-clip-text text-transparent bg-gradient-to-l from-blue-500 to-red-500">
+              Junior Asosa
+            </span>
+          </p>
         </div>
       </div>
     </footer>

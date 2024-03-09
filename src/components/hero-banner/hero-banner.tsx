@@ -8,7 +8,7 @@ import { Suspense } from "react";
 //   () => import(require("../animations/animated-text"))
 // );
 
-const AnimatedText = lazy(() => import('../animations/animated-text'));
+const AnimatedText = lazy(() => import("../animations/animated-text"));
 
 function HeroBanner() {
   return (
@@ -21,9 +21,11 @@ function HeroBanner() {
           </p>
           <div className="text-center md:text-left text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-l from-blue-500 to-red-500">
             <Suspense fallback={<div>Chargement...</div>}>
-              <AnimatedText text="Junior Asosa"
-              el="h1"
-              className="text-5xl" />
+              <AnimatedText
+                text="{ Junior Asosa }"
+                el="h1"
+                className="text-5xl"
+              />
             </Suspense>
           </div>
           <p className="text-5xl font-bold text-center md:text-left">

@@ -98,7 +98,7 @@ const tools : StackType = [
 
 function TechStackSection() {
   return (
-    <section className="py-24 px-3">
+    <section className="py-24 px-3 bg-background/10">
       <div className="max-w-5xl m-auto">
         <h2 className="text-4xl text-center py-6 font-bold">My Tech Stack</h2>
         <p className="text-xl text-center md:pb-12 pb-6 "> Technologies I’ve been working with recently</p>
