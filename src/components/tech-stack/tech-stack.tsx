@@ -56,7 +56,7 @@ function TechStackSection() {
       <div className="max-w-5xl m-auto">
         <h2 className="text-4xl text-center py-6 font-bold">My Tech Stack</h2>
         <p className="text-xl text-center md:pb-12 pb-6 "> Technologies I’ve been working with recently</p>
-        <div className="flex flex-wrap items-center justify-center gap-12 py-20">
+        <div className="flex flex-wrap items-center justify-center gap-12">
           {stack.map((item) => (
             <div key={item.title}>
               <Image src={item.icone} alt={item.title}></Image>

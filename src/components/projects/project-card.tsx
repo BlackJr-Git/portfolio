@@ -1,14 +1,19 @@
 import Image, { StaticImageData } from "next/image";
 import { CardBody, CardContainer, CardItem } from "../../components/ui/3d-Card";
+import { link } from "fs";
 
 function ProjectCard({
   image,
   title,
   description,
+  stack,
+  link
 }: {
   image: StaticImageData;
   title: string;
   description: string;
+  stack : string,
+  link : string
 }) {
   return (
     <CardContainer className="inter-var">
@@ -41,14 +46,14 @@ function ProjectCard({
             as="button"
             className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
           >
-            Visite now →
+            Stack : {stack}
           </CardItem>
           <CardItem
             translateZ={20}
             as="button"
             className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
           >
-            Visite
+            <a href={link}>Visite</a>
           </CardItem>
         </div>
       </CardBody>
