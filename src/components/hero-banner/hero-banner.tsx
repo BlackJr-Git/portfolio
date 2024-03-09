@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function HeroBanner() {
   return (
-    <section className="flex   items-center justify-center h-96 py-24">
+    <section className="flex   items-center justify-center h-96 py-24 px-3">
       <div className="flex md:flex-row flex-col items-center justify-center max-w-5xl w-full ">
         <div className="md:w-1/2 w-full px-3 my-12">
           <p className="text-5xl font-bold">Hi , </p>
