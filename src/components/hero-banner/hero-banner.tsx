@@ -15,20 +15,22 @@ function HeroBanner() {
     <section className="flex items-center justify-center h-96 my-24 px-3">
       <div className="flex md:flex-row flex-col items-center justify-center max-w-5xl w-full ">
         <div className="md:w-1/2 w-full my-12">
-          <p className="text-5xl font-bold md:text-left text-center">Hi , </p>
-          <p className="text-5xl font-bold md:text-left text-center">
+          <p className="text-4xl md:text-5xl font-bold md:text-left text-center">
+            Hi ,{" "}
+          </p>
+          <p className="text-4xl md:text-5xl font-bold md:text-left text-center">
             My name is
           </p>
-          <div className="text-center md:text-left text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-l from-blue-500 to-red-500">
+          <div className="text-center md:text-left text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-l from-blue-500 to-red-500">
             <Suspense fallback={<div>Chargement...</div>}>
               <AnimatedText
                 text="{ Junior Asosa }"
                 el="h1"
-                className="text-5xl"
+                className=" text-4xl md:text-5xl"
               />
             </Suspense>
           </div>
-          <p className="text-5xl font-bold text-center md:text-left">
+          <p className="md:text-5xl text-4xl font-bold text-center md:text-left">
             I build some cool things for web
           </p>
         </div>

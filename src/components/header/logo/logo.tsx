@@ -1,12 +1,9 @@
 import Image from "next/image";
-import { logo  } from "@/assets";
+import { logo } from "@/assets";
 
 function Logo() {
-  return (
-    <div>
-      <Image src={logo} width={100} height={50} alt="junior asosa logo"></Image>
-    </div>
-  );
+  return <p className="text-lg bg-clip-text text-transparent bg-gradient-to-l from-blue-500 to-red-500 font-semibold">KinDev</p>
+  ;
 }
 
 export default Logo;
