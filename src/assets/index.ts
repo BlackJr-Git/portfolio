@@ -7,6 +7,10 @@ export { default as reactIcon } from "./logos_react.svg";
 export { default as tailwindIcon } from "./vscode-icons_file-type-tailwind.svg";
 export { default as sassIcon } from "./logos_sass.svg";
 export { default as gitIcon } from "./logos_git-icon.svg";
-export { default as githubIcon } from "./akar-icons_github-fill.svg";
+export { default as githubIcon } from "./github.1024.png";
 export { default as nawtechProjectImage } from "./nawtech-project.png";
 export { default as itccProjectImage } from "./itcc-project.png";
+export { default as tsIcon } from "./typescript-icon.svg";
+export { default as nextIcon } from "./next-js.1024.png";
+export { default as nodeIcon } from "./nodejs.png";
+export { default as wordpressIcon } from "./WordPress.com.svg"

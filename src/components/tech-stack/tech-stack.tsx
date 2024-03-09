@@ -8,7 +8,14 @@ import {
   sassIcon,
   gitIcon,
   githubIcon,
+  tsIcon,
+  nextIcon,
+  nodeIcon,
+  wordpressIcon
 } from "@/assets";
+import { IonIcon } from "@ionic/react";
+import { logoLinkedin, logoInstagram, logoGithub } from "ionicons/icons";
+
 
 type StackType = {
   title: string;
@@ -29,16 +36,20 @@ const stack: StackType = [
     icone: jsIcon,
   },
   {
+    title: "Typescript",
+    icone: tsIcon,
+  },
+  {
     title: "React Js",
     icone: reactIcon,
   },
   {
-    title: "Git",
-    icone: gitIcon,
+    title: "Next Js",
+    icone: nextIcon,
   },
   {
-    title: "Github",
-    icone: githubIcon,
+    title: "Node Js",
+    icone: nodeIcon,
   },
   {
     title: "SASS",
@@ -48,6 +59,20 @@ const stack: StackType = [
     title: "tailwind CSS",
     icone: tailwindIcon,
   },
+  
+  {
+    title: "Wordpress",
+    icone: wordpressIcon,
+  },
+  {
+    title: "Git",
+    icone: gitIcon,
+  },
+  {
+    title: "Github",
+    icone: githubIcon,
+  },
+  
 ];
 
 function TechStackSection() {
@@ -58,7 +83,7 @@ function TechStackSection() {
         <p className="text-xl text-center md:pb-12 pb-6 "> Technologies I’ve been working with recently</p>
         <div className="flex flex-wrap items-center justify-center gap-12">
           {stack.map((item) => (
-            <div key={item.title}>
+            <div key={item.title} className="bg-foreground md:w-28 w-20 h-20  md:h-28 flex items-center justify-center rounded-2xl drop-shadow-lg p-3"> 
               <Image src={item.icone} alt={item.title}></Image>
             </div>
           ))}

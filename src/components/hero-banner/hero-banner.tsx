@@ -15,7 +15,7 @@ function HeroBanner() {
     <section className="flex items-center justify-center h-96 my-24 px-3">
       <div className="flex md:flex-row flex-col items-center justify-center max-w-5xl w-full ">
         <div className="md:w-1/2 w-full my-12">
-          <p className="text-5xl font-bold md:text-left text-center">Hi , </p>
+          <p className="text-5xl font-bold md:text-left text-center">Hi  Waving hand, </p>
           <p className="text-5xl font-bold md:text-left text-center">
             My name is
           </p>
