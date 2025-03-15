@@ -85,13 +85,13 @@ export function AnimatedTestimonialsDemo() {
     },
   ];
   return (
-    <>
+    <section className="py-12" id="projects">
       <h2 className="text-4xl text-center py-6 font-bold">Projects </h2>
       <p className="text-xl text-center md:pb-12 pb-6 md:w-1/2 mx-auto">
         Here is a selection of my projects, reflecting my expertise in web
         development and ability to create solutions that meet specific needs.
       </p>
       <AnimatedTestimonials testimonials={testimonials} />
-    </>
+    </section>
   );
 }

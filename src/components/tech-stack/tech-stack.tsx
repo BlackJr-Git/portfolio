@@ -15,9 +15,11 @@ import {
   trelloIcon,
   aiIcon,
   figmaIcon,
-  asanaIcon
+  asanaIcon,
+  dockerIcon,
+  pythonIcon,
+  djangoIcon,
 } from "@/assets";
-
 
 type StackType = {
   title: string;
@@ -54,14 +56,18 @@ const stack: StackType = [
     icone: nodeIcon,
   },
   {
-    title: "SASS",
-    icone: sassIcon,
+    title: "Python",
+    icone: pythonIcon,
+  },
+  {
+    title: "Django",
+    icone: djangoIcon,
   },
   {
     title: "tailwind CSS",
     icone: tailwindIcon,
   },
-  
+
   {
     title: "Wordpress",
     icone: wordpressIcon,
@@ -71,13 +77,12 @@ const stack: StackType = [
     icone: gitIcon,
   },
   {
-    title: "Github",
-    icone: githubIcon,
+    title: "Docker",
+    icone: dockerIcon,
   },
-  
 ];
 
-const tools : StackType = [
+const tools: StackType = [
   {
     title: "Illustrator",
     icone: aiIcon,
@@ -94,17 +99,27 @@ const tools : StackType = [
     title: "Asana",
     icone: asanaIcon,
   },
+  {
+    title: "GitHub",
+    icone: githubIcon,
+  },
 ];
 
 function TechStackSection() {
   return (
-    <section className="py-24 px-3 bg-background/10">
+    <section className="py-24 px-3 bg-background/10" id="stack">
       <div className="max-w-5xl m-auto">
         <h2 className="text-4xl text-center py-6 font-bold">My Tech Stack</h2>
-        <p className="text-xl text-center md:pb-12 pb-6 "> Technologies I’ve been working with recently</p>
+        <p className="text-xl text-center md:pb-12 pb-6 ">
+          {" "}
+          Technologies I’ve been working with recently
+        </p>
         <div className="flex flex-wrap items-center justify-center gap-12">
           {stack.map((item) => (
-            <div key={item.title} className="bg-foreground md:w-28 w-20 h-20  md:h-28 flex items-center justify-center rounded-2xl drop-shadow-lg p-3"> 
+            <div
+              key={item.title}
+              className="bg-foreground md:w-28 w-20 h-20  md:h-28 flex items-center justify-center rounded-2xl drop-shadow-lg p-3"
+            >
               <Image src={item.icone} alt={item.title}></Image>
             </div>
           ))}
@@ -113,12 +128,15 @@ function TechStackSection() {
 
       <h2 className="text-4xl text-center py-6 font-bold mt-12">My toolbox</h2>
       <div className="flex flex-wrap items-center justify-center gap-12">
-          {tools.map((item) => (
-            <div key={item.title} className="bg-foreground md:w-28 w-20 h-20  md:h-28 flex items-center justify-center rounded-2xl drop-shadow-lg p-3"> 
-              <Image src={item.icone} alt={item.title}></Image>
-            </div>
-          ))}
-        </div>
+        {tools.map((item) => (
+          <div
+            key={item.title}
+            className="bg-foreground md:w-28 w-20 h-20  md:h-28 flex items-center justify-center rounded-2xl drop-shadow-lg p-3"
+          >
+            <Image src={item.icone} alt={item.title}></Image>
+          </div>
+        ))}
+      </div>
     </section>
   );
 }

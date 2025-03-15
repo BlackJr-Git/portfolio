@@ -24,3 +24,6 @@ export { default as raphyaHeaderImage } from "./exp/raphya_header.png";
 export { default as raphyaSection } from "./exp/raphya-section.png";
 export { default as cheatSheetImage } from "./exp/thecheatsheet.png";
 export { default as berceauImage } from "./exp/berceau-1.png";
+export { default as dockerIcon } from "./docker-icon.svg";
+export { default as pythonIcon } from "./python-icon.svg";
+export { default as djangoIcon } from "./django-icon.svg";

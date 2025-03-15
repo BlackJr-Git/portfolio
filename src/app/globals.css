@@ -92,3 +92,7 @@
   -webkit-mask-composite: xor;
           mask-composite: exclude;
 }
+
+html {
+  scroll-behavior: smooth;
+}
