@@ -39,7 +39,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
     >
       <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10 flex flex-col items-center">
         <h2 className="text-4xl text-center py-6 font-bold">Work Experience</h2>
-        <p className="text-xl text-center md:pb-12 pb-6 w-1/2 mx-auto">
+        <p className="text-xl text-center md:pb-12 pb-6 md:w-1/2 mx-auto">
           I&apos;ve been working as a Fullstack Web Developer and UI/UX
           Designer. Here&apos;s a timeline of my journey.
         </p>

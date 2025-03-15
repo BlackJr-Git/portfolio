@@ -18,7 +18,7 @@ export default function ExperienceSection() {
       title: "Quantum Vertex",
       content: (
         <div>
-          <div className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+          <div className="text-neutral-800 dark:text-neutral-200 text-md flex flex-col gap-3 font-normal mb-8">
             <p className="text-3xl mb-4">Fullstack Software Engineer</p>
             <p className="dark:text-neutral-400 text-xl mb-4">
               (July 2024 - Present)
@@ -63,7 +63,7 @@ export default function ExperienceSection() {
       title: "Raphya SARL",
       content: (
         <div>
-          <div className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+          <div className="text-neutral-800 dark:text-neutral-200 text-md flex flex-col gap-3 font-normal mb-8">
             <p className="text-3xl mb-4">
               Fullstack Web Developer and UI/UX Designer (Remote)
             </p>
@@ -105,7 +105,7 @@ export default function ExperienceSection() {
       title: "Freelance",
       content: (
         <div>
-          <div className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+          <div className="text-neutral-800 text-md flex flex-col gap-3 dark:text-neutral-200 font-normal mb-8">
             <p className="text-3xl mb-4">
               Fullstack Web Developer and UI/UX Designer (Hybrid)
             </p>
