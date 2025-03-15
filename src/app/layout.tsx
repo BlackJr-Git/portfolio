@@ -10,7 +10,7 @@ const inter = Poppins({ subsets: ["latin"], weight: ["800","900","300","400","50
 
 export const metadata: Metadata = {
   title: "Junior Dev",
-  description: "Portfolio de Junior Asosa Devellopeur Full-Stack JavaScript",
+  description: "Portfolio de Junior Asosa Devellopeur Full-Stack",
 };
 
 export default function RootLayout({
