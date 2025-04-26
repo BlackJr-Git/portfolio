@@ -42,7 +42,7 @@ function ProjectsSection() {
 export default AnimatedTestimonialsDemo;
 
 export function AnimatedTestimonialsDemo() {
-  const testimonials = [
+  const projects = [
     // {
     //   quote:
     //     "Developing a comprehensive e-commerce platform for phones, IT equipment, and bespoke development services to meet all tech-related needs.",
@@ -58,6 +58,7 @@ export function AnimatedTestimonialsDemo() {
       designation: "Showcase site",
       src: itccProjectImage.src,
       stack: ["Wordpress", "Elementor"],
+      link: "https://itcc-rdc.com/",
     },
     {
       quote:
@@ -66,6 +67,7 @@ export function AnimatedTestimonialsDemo() {
       designation: "Web App",
       src: cheatSheetImage.src,
       stack: ["Next JS", "Tailwind CSS", "TypeScript", "Postgres SQL", "Clerk"],
+      link: "https://thecheatsheet.tech/",
     },
     {
       quote:
@@ -74,6 +76,7 @@ export function AnimatedTestimonialsDemo() {
       designation: "Showcase site",
       src: berceauImage.src,
       stack: ["Wordpress", "Elementor"],
+      link: "https://berceau-drc.com/",
     },
     {
       quote:
@@ -82,6 +85,7 @@ export function AnimatedTestimonialsDemo() {
       designation: "Web App",
       src: bppmeImage.src,
       stack: ["Next JS", "Django", "Docker", "Postgres SQL"],
+      link: "https://bp.pme.cd/",
     },
   ];
   return (
@@ -91,7 +95,7 @@ export function AnimatedTestimonialsDemo() {
         Here is a selection of my projects, reflecting my expertise in web
         development and ability to create solutions that meet specific needs.
       </p>
-      <AnimatedTestimonials testimonials={testimonials} />
+      <AnimatedTestimonials testimonials={projects} />
     </section>
   );
 }

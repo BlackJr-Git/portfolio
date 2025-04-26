@@ -12,6 +12,7 @@ type Testimonial = {
   designation: string;
   src: string;
   stack: string[];
+  link?: string;
 };
 
 const tailwindColors = {
@@ -135,7 +136,18 @@ export const AnimatedTestimonials = ({
             }}
           >
             <h3 className="text-2xl font-bold dark:text-white text-black">
-              {testimonials[active].name}
+              {testimonials[active].link ? (
+                <a
+                  href={testimonials[active].link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline text-blue-600 dark:text-blue-400"
+                >
+                  {testimonials[active].name} {"   "}👈
+                </a>
+              ) : (
+                testimonials[active].name
+              )}
             </h3>
             <p className="text-sm text-gray-500 dark:text-neutral-500">
               {testimonials[active].designation}
