@@ -10,7 +10,7 @@ function Navbar() {
         <Link href={"/#stack"}>Tech Stack </Link>
         <Link href={"/#experience"}>Work Experience</Link>
         <Link href={"/#projects"}> Projects </Link>
-        {/* <Link href={"#contact"}> Contact </Link> */}
+        <Link href={"/contact"}> Contact </Link>
       </ul>
       <SocialNetworks></SocialNetworks>
     </nav>
